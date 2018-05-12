@@ -2,6 +2,7 @@
 # docker-java-in-flames
 
 **Host installation (Ubuntu):**
+
 sudo apt-get install linux-tools-common linux-tools-generic linux-tools-`uname -r` -y
 sudo curl https://raw.githubusercontent.com/brendangregg/FlameGraph/master/stackcollapse-perf.pl -o /usr/local/bin/stackcollapse-perf.pl
 sudo curl https://raw.githubusercontent.com/brendangregg/FlameGraph/master/flamegraph.pl -o /usr/local/bin/flamegraph.pl
