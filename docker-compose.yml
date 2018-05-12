@@ -1,0 +1,6 @@
+java-app:
+   build: .
+   ports:
+     - "8765:8765"
+   volumes:
+     - "./perf-map/:/tmp/perf-map"
