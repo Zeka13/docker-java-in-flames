@@ -20,6 +20,7 @@
     docker-compose exec java-app bash
     cd /perf-map-agent/out/ && java -cp attach-main.jar:$JAVA_HOME/lib/tools.jar net.virtualvoid.perf.AttachOnce $(pidof java)
     cp /tmp/perf-$(pidof java).map /tmp/perf-map/
+    # ?? chown root:root /tmp/perf-map/perf-$(pidof java).map ?? #
     exit
 
 **Draw Flame Graph on Host:**
